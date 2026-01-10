@@ -6,7 +6,7 @@ const path      = require('path');
 function GetPremakeVersion() 
 {
 	const arg = process.argv.find(a => a.startsWith('--premake-version='));
-	return arg ? arg.split('=')[1] : '5.0.0-beta4';
+	return arg ? arg.split('=')[1] : '5.0.0-beta7';
 }
 
 const PREMAKE_VERSION = GetPremakeVersion();
