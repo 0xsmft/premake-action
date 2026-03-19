@@ -1,5 +1,5 @@
 name: 'Download Premake'
 description: 'A premake downloader for GitHub CI, made to be simple to use. To run add "uses: BEASTSM96/premake-action", in your CI file.'
 runs:
-  using: 'node16'
+  using: 'node24'
   main: 'index.js'
