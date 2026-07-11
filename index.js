@@ -6,11 +6,11 @@ const path      = require('path');
 function GetPremakeVersion() 
 {
 	const arg = process.argv.find(a => a.startsWith('--premake-version='));
-	return arg ? "v" + arg.split('=')[1] : 'latest';
+	return arg ? arg.split('=')[1] : '5.0.0-beta7';
 }
 
 const PREMAKE_VERSION = GetPremakeVersion();
-const BASE_URL = `https://github.com/premake/premake-core/releases/download/${PREMAKE_VERSION}`;
+const BASE_URL = `https://github.com/premake/premake-core/releases/download/v${PREMAKE_VERSION}`;
 
 async function DownloadPremake() 
 {
